@@ -1,0 +1,1475 @@
+{
+  "schemaVersion": 1,
+  "project": {
+    "id": "example-energy",
+    "name": "Example energy monitor"
+  },
+  "snapshotId": "fixture-v1",
+  "capturedAt": "2026-10-15T14:00:00Z",
+  "source": {
+    "fingerprint": "e181c7d64ca432e89c3e254624e1474c056dd501ed11f4f8b8202103ee073795",
+    "gitCommit": null,
+    "processRef": "fixture-iterative@1",
+    "kernelVersion": "fixture",
+    "consistency": "immutable-capture",
+    "mode": "fixture"
+  },
+  "selection": {
+    "requirementSet": "RQS-000000000001-r00002",
+    "basis": "latest-recorded-requirement-set",
+    "requirements": [
+      "REQ-000000000001-r00001",
+      "REQ-000000000002-r00001",
+      "REQ-000000000003-r00003",
+      "REQ-000000000004-r00001",
+      "REQ-000000000005-r00001",
+      "REQ-000000000006-r00001",
+      "REQ-000000000007-r00001",
+      "REQ-000000000008-r00001",
+      "REQ-000000000009-r00001"
+    ],
+    "decompositions": [
+      "DCP-000000000001-r00001",
+      "DCP-000000000002-r00001",
+      "DCP-000000000003-r00001",
+      "DCP-000000000004-r00001",
+      "DCP-000000000005-r00001",
+      "DCP-000000000006-r00001"
+    ]
+  },
+  "artifacts": [
+    {
+      "id": "REQ-000000000001",
+      "revisionId": "REQ-000000000001-r00001",
+      "revision": 1,
+      "type": "REQ",
+      "title": "Understand energy use",
+      "body": "The user can understand current and accumulated energy use.",
+      "payload": {
+        "publication": "recorded",
+        "kind": "stakeholder",
+        "statement": "The user can understand current and accumulated energy use."
+      },
+      "links": [],
+      "source": {
+        "path": null,
+        "digest": null,
+        "processRef": "fixture-iterative@1"
+      },
+      "storage": "frozen",
+      "recordedAt": null
+    },
+    {
+      "id": "REQ-000000000002",
+      "revisionId": "REQ-000000000002-r00001",
+      "revision": 1,
+      "type": "REQ",
+      "title": "Recover from interruptions",
+      "body": "The user can resume monitoring after an interruption.",
+      "payload": {
+        "publication": "recorded",
+        "kind": "stakeholder",
+        "statement": "The user can resume monitoring after an interruption."
+      },
+      "links": [],
+      "source": {
+        "path": null,
+        "digest": null,
+        "processRef": "fixture-iterative@1"
+      },
+      "storage": "frozen",
+      "recordedAt": null
+    },
+    {
+      "id": "REQ-000000000003",
+      "revisionId": "REQ-000000000003-r00001",
+      "revision": 1,
+      "type": "REQ",
+      "title": "Show current power",
+      "body": "The system shall display power.",
+      "payload": {
+        "publication": "recorded",
+        "kind": "software",
+        "ears": {
+          "pattern": "ubiquitous",
+          "system": "The system",
+          "response": "display power."
+        },
+        "level": "system"
+      },
+      "links": [],
+      "source": {
+        "path": null,
+        "digest": null,
+        "processRef": "fixture-iterative@1"
+      },
+      "storage": "frozen",
+      "recordedAt": null
+    },
+    {
+      "id": "REQ-000000000003",
+      "revisionId": "REQ-000000000003-r00002",
+      "revision": 2,
+      "type": "REQ",
+      "title": "Show current power",
+      "body": "The system shall display the latest power reading and its units.",
+      "payload": {
+        "publication": "recorded",
+        "kind": "software",
+        "ears": {
+          "pattern": "ubiquitous",
+          "system": "The system",
+          "response": "display the latest power reading and its units."
+        },
+        "level": "system"
+      },
+      "links": [],
+      "source": {
+        "path": null,
+        "digest": null,
+        "processRef": "fixture-iterative@1"
+      },
+      "storage": "frozen",
+      "recordedAt": null
+    },
+    {
+      "id": "REQ-000000000003",
+      "revisionId": "REQ-000000000003-r00003",
+      "revision": 3,
+      "type": "REQ",
+      "title": "Show current power",
+      "body": "The system shall display the latest valid power reading and units, or indicate that a current reading is unavailable.",
+      "payload": {
+        "publication": "recorded",
+        "kind": "software",
+        "ears": {
+          "pattern": "ubiquitous",
+          "system": "The system",
+          "response": "display the latest valid power reading and units, or indicate that a current reading is unavailable."
+        },
+        "level": "system"
+      },
+      "links": [],
+      "source": {
+        "path": null,
+        "digest": null,
+        "processRef": "fixture-iterative@1"
+      },
+      "storage": "frozen",
+      "recordedAt": null
+    },
+    {
+      "id": "REQ-000000000004",
+      "revisionId": "REQ-000000000004-r00001",
+      "revision": 1,
+      "type": "REQ",
+      "title": "Keep monitoring available",
+      "body": "The system shall resume monitoring after a recoverable interruption.",
+      "payload": {
+        "publication": "recorded",
+        "kind": "software",
+        "ears": {
+          "pattern": "ubiquitous",
+          "system": "The system",
+          "response": "resume monitoring after a recoverable interruption."
+        },
+        "level": "system"
+      },
+      "links": [],
+      "source": {
+        "path": null,
+        "digest": null,
+        "processRef": "fixture-iterative@1"
+      },
+      "storage": "frozen",
+      "recordedAt": null
+    },
+    {
+      "id": "REQ-000000000005",
+      "revisionId": "REQ-000000000005-r00001",
+      "revision": 1,
+      "type": "REQ",
+      "title": "Display a power reading",
+      "body": "When a valid power sample arrives, the dashboard shall update the displayed power and units.",
+      "payload": {
+        "publication": "recorded",
+        "kind": "software",
+        "ears": {
+          "pattern": "ubiquitous",
+          "system": "The system",
+          "response": "When a valid power sample arrives, the dashboard shall update the displayed power and units."
+        },
+        "level": "high-level",
+        "component": "dashboard"
+      },
+      "links": [],
+      "source": {
+        "path": null,
+        "digest": null,
+        "processRef": "fixture-iterative@1"
+      },
+      "storage": "frozen",
+      "recordedAt": null
+    },
+    {
+      "id": "REQ-000000000006",
+      "revisionId": "REQ-000000000006-r00001",
+      "revision": 1,
+      "type": "REQ",
+      "title": "Publish valid readings",
+      "body": "When a valid meter sample arrives, the meter adapter shall publish that sample to consumers.",
+      "payload": {
+        "publication": "recorded",
+        "kind": "software",
+        "ears": {
+          "pattern": "ubiquitous",
+          "system": "The system",
+          "response": "When a valid meter sample arrives, the meter adapter shall publish that sample to consumers."
+        },
+        "level": "high-level",
+        "component": "meter-adapter"
+      },
+      "links": [],
+      "source": {
+        "path": null,
+        "digest": null,
+        "processRef": "fixture-iterative@1"
+      },
+      "storage": "frozen",
+      "recordedAt": null
+    },
+    {
+      "id": "REQ-000000000007",
+      "revisionId": "REQ-000000000007-r00001",
+      "revision": 1,
+      "type": "REQ",
+      "title": "Ignore readings for another meter",
+      "body": "When a sample identifies another meter, the dashboard shall retain the selected meter display.",
+      "payload": {
+        "publication": "recorded",
+        "kind": "software",
+        "ears": {
+          "pattern": "ubiquitous",
+          "system": "The system",
+          "response": "When a sample identifies another meter, the dashboard shall retain the selected meter display."
+        },
+        "level": "low-level",
+        "component": "dashboard"
+      },
+      "links": [],
+      "source": {
+        "path": null,
+        "digest": null,
+        "processRef": "fixture-iterative@1"
+      },
+      "storage": "frozen",
+      "recordedAt": null
+    },
+    {
+      "id": "REQ-000000000008",
+      "revisionId": "REQ-000000000008-r00001",
+      "revision": 1,
+      "type": "REQ",
+      "title": "Preserve display state for late replies",
+      "body": "When a late sample belongs to the previously selected meter, the dashboard shall leave the current selection and reading unchanged.",
+      "payload": {
+        "publication": "recorded",
+        "kind": "software",
+        "ears": {
+          "pattern": "ubiquitous",
+          "system": "The system",
+          "response": "When a late sample belongs to the previously selected meter, the dashboard shall leave the current selection and reading unchanged."
+        },
+        "level": "low-level",
+        "component": "dashboard"
+      },
+      "links": [],
+      "source": {
+        "path": null,
+        "digest": null,
+        "processRef": "fixture-iterative@1"
+      },
+      "storage": "frozen",
+      "recordedAt": null
+    },
+    {
+      "id": "REQ-000000000009",
+      "revisionId": "REQ-000000000009-r00001",
+      "revision": 1,
+      "type": "REQ",
+      "title": "Retain recorded samples",
+      "body": "When a collected sample is stored, the storage component shall preserve it across process restart.",
+      "payload": {
+        "publication": "recorded",
+        "kind": "software",
+        "ears": {
+          "pattern": "ubiquitous",
+          "system": "The system",
+          "response": "When a collected sample is stored, the storage component shall preserve it across process restart."
+        },
+        "level": "high-level",
+        "component": "storage"
+      },
+      "links": [],
+      "source": {
+        "path": null,
+        "digest": null,
+        "processRef": "fixture-iterative@1"
+      },
+      "storage": "frozen",
+      "recordedAt": null
+    },
+    {
+      "id": "DCP-000000000001",
+      "revisionId": "DCP-000000000001-r00001",
+      "revision": 1,
+      "type": "DCP",
+      "title": "Energy monitoring",
+      "body": "",
+      "payload": {
+        "publication": "recorded"
+      },
+      "links": [
+        {
+          "type": "parent",
+          "target": "REQ-000000000001-r00001"
+        },
+        {
+          "type": "child",
+          "target": "REQ-000000000003-r00003"
+        },
+        {
+          "type": "child",
+          "target": "REQ-000000000004-r00001"
+        }
+      ],
+      "source": {
+        "path": null,
+        "digest": null,
+        "processRef": "fixture-iterative@1"
+      },
+      "storage": "frozen",
+      "recordedAt": null
+    },
+    {
+      "id": "DCP-000000000002",
+      "revisionId": "DCP-000000000002-r00001",
+      "revision": 1,
+      "type": "DCP",
+      "title": "Recovery",
+      "body": "",
+      "payload": {
+        "publication": "recorded"
+      },
+      "links": [
+        {
+          "type": "parent",
+          "target": "REQ-000000000002-r00001"
+        },
+        {
+          "type": "child",
+          "target": "REQ-000000000004-r00001"
+        }
+      ],
+      "source": {
+        "path": null,
+        "digest": null,
+        "processRef": "fixture-iterative@1"
+      },
+      "storage": "frozen",
+      "recordedAt": null
+    },
+    {
+      "id": "DCP-000000000003",
+      "revisionId": "DCP-000000000003-r00001",
+      "revision": 1,
+      "type": "DCP",
+      "title": "Power presentation and sampling",
+      "body": "",
+      "payload": {
+        "publication": "recorded"
+      },
+      "links": [
+        {
+          "type": "parent",
+          "target": "REQ-000000000003-r00003"
+        },
+        {
+          "type": "child",
+          "target": "REQ-000000000005-r00001"
+        },
+        {
+          "type": "child",
+          "target": "REQ-000000000006-r00001"
+        }
+      ],
+      "source": {
+        "path": null,
+        "digest": null,
+        "processRef": "fixture-iterative@1"
+      },
+      "storage": "frozen",
+      "recordedAt": null
+    },
+    {
+      "id": "DCP-000000000004",
+      "revisionId": "DCP-000000000004-r00001",
+      "revision": 1,
+      "type": "DCP",
+      "title": "Monitoring continuity",
+      "body": "",
+      "payload": {
+        "publication": "recorded"
+      },
+      "links": [
+        {
+          "type": "parent",
+          "target": "REQ-000000000004-r00001"
+        },
+        {
+          "type": "child",
+          "target": "REQ-000000000006-r00001"
+        },
+        {
+          "type": "child",
+          "target": "REQ-000000000009-r00001"
+        }
+      ],
+      "source": {
+        "path": null,
+        "digest": null,
+        "processRef": "fixture-iterative@1"
+      },
+      "storage": "frozen",
+      "recordedAt": null
+    },
+    {
+      "id": "DCP-000000000005",
+      "revisionId": "DCP-000000000005-r00001",
+      "revision": 1,
+      "type": "DCP",
+      "title": "Display association",
+      "body": "",
+      "payload": {
+        "publication": "recorded"
+      },
+      "links": [
+        {
+          "type": "parent",
+          "target": "REQ-000000000005-r00001"
+        },
+        {
+          "type": "child",
+          "target": "REQ-000000000007-r00001"
+        }
+      ],
+      "source": {
+        "path": null,
+        "digest": null,
+        "processRef": "fixture-iterative@1"
+      },
+      "storage": "frozen",
+      "recordedAt": null
+    },
+    {
+      "id": "DCP-000000000006",
+      "revisionId": "DCP-000000000006-r00001",
+      "revision": 1,
+      "type": "DCP",
+      "title": "Late reply handling",
+      "body": "",
+      "payload": {
+        "publication": "recorded"
+      },
+      "links": [
+        {
+          "type": "parent",
+          "target": "REQ-000000000007-r00001"
+        },
+        {
+          "type": "child",
+          "target": "REQ-000000000008-r00001"
+        }
+      ],
+      "source": {
+        "path": null,
+        "digest": null,
+        "processRef": "fixture-iterative@1"
+      },
+      "storage": "frozen",
+      "recordedAt": null
+    },
+    {
+      "id": "RQS-000000000001",
+      "revisionId": "RQS-000000000001-r00001",
+      "revision": 1,
+      "type": "RQS",
+      "title": "Earlier requirement selection",
+      "body": "",
+      "payload": {
+        "publication": "recorded"
+      },
+      "links": [
+        {
+          "type": "contains",
+          "target": "REQ-000000000003-r00002"
+        }
+      ],
+      "source": {
+        "path": null,
+        "digest": null,
+        "processRef": "fixture-iterative@1"
+      },
+      "storage": "frozen",
+      "recordedAt": null
+    },
+    {
+      "id": "RQS-000000000001",
+      "revisionId": "RQS-000000000001-r00002",
+      "revision": 2,
+      "type": "RQS",
+      "title": "Current requirement selection",
+      "body": "",
+      "payload": {
+        "publication": "recorded"
+      },
+      "links": [
+        {
+          "type": "contains",
+          "target": "REQ-000000000001-r00001"
+        },
+        {
+          "type": "contains",
+          "target": "REQ-000000000002-r00001"
+        },
+        {
+          "type": "contains",
+          "target": "REQ-000000000003-r00003"
+        },
+        {
+          "type": "contains",
+          "target": "REQ-000000000004-r00001"
+        },
+        {
+          "type": "contains",
+          "target": "REQ-000000000005-r00001"
+        },
+        {
+          "type": "contains",
+          "target": "REQ-000000000006-r00001"
+        },
+        {
+          "type": "contains",
+          "target": "REQ-000000000007-r00001"
+        },
+        {
+          "type": "contains",
+          "target": "REQ-000000000008-r00001"
+        },
+        {
+          "type": "contains",
+          "target": "REQ-000000000009-r00001"
+        },
+        {
+          "type": "decomposition",
+          "target": "DCP-000000000001-r00001"
+        },
+        {
+          "type": "decomposition",
+          "target": "DCP-000000000002-r00001"
+        },
+        {
+          "type": "decomposition",
+          "target": "DCP-000000000003-r00001"
+        },
+        {
+          "type": "decomposition",
+          "target": "DCP-000000000004-r00001"
+        },
+        {
+          "type": "decomposition",
+          "target": "DCP-000000000005-r00001"
+        },
+        {
+          "type": "decomposition",
+          "target": "DCP-000000000006-r00001"
+        }
+      ],
+      "source": {
+        "path": null,
+        "digest": null,
+        "processRef": "fixture-iterative@1"
+      },
+      "storage": "frozen",
+      "recordedAt": null
+    },
+    {
+      "id": "REV-000000000001",
+      "revisionId": "REV-000000000001-r00001",
+      "revision": 1,
+      "type": "REV",
+      "title": "Clarify missing readings",
+      "body": "",
+      "payload": {
+        "outcome": "fail",
+        "findings": "Define unavailable-reading behavior.",
+        "requirement_assessments": [
+          {
+            "requirement": "REQ-000000000003-r00002",
+            "disposition": "needs-change",
+            "rationale": "The unavailable-reading case is unspecified."
+          }
+        ]
+      },
+      "links": [
+        {
+          "type": "reviews",
+          "target": "RQS-000000000001-r00001"
+        }
+      ],
+      "source": {
+        "path": null,
+        "digest": null,
+        "processRef": "fixture-iterative@1"
+      },
+      "storage": "frozen",
+      "recordedAt": null
+    },
+    {
+      "id": "REV-000000000002",
+      "revisionId": "REV-000000000002-r00001",
+      "revision": 1,
+      "type": "REV",
+      "title": "Requirements review",
+      "body": "",
+      "payload": {
+        "outcome": "pass",
+        "findings": "The selected obligations are sufficiently defined.",
+        "requirement_assessments": [
+          {
+            "requirement": "REQ-000000000003-r00003",
+            "disposition": "valid",
+            "rationale": "The reading, units, and unavailable state are explicit."
+          }
+        ]
+      },
+      "links": [
+        {
+          "type": "reviews",
+          "target": "RQS-000000000001-r00002"
+        }
+      ],
+      "source": {
+        "path": null,
+        "digest": null,
+        "processRef": "fixture-iterative@1"
+      },
+      "storage": "frozen",
+      "recordedAt": null
+    },
+    {
+      "id": "VFY-000000000001",
+      "revisionId": "VFY-000000000001-r00001",
+      "revision": 1,
+      "type": "VFY",
+      "title": "Power display checks",
+      "body": "",
+      "payload": {
+        "cases": [
+          {
+            "id": "power-display",
+            "targets": [
+              "REQ-000000000003-r00003"
+            ],
+            "actions": [
+              "Publish a valid sample, then make a current sample unavailable."
+            ],
+            "expected_results": [
+              "The valid power and units are shown; unavailability is indicated."
+            ]
+          }
+        ],
+        "coverage": [
+          {
+            "target": "REQ-000000000003-r00003",
+            "case_ids": [
+              "power-display"
+            ]
+          }
+        ]
+      },
+      "links": [],
+      "source": {
+        "path": null,
+        "digest": null,
+        "processRef": "fixture-iterative@1"
+      },
+      "storage": "frozen",
+      "recordedAt": null
+    },
+    {
+      "id": "RES-000000000001",
+      "revisionId": "RES-000000000001-r00001",
+      "revision": 1,
+      "type": "RES",
+      "title": "Power display observation incomplete",
+      "body": "",
+      "payload": {
+        "outcome": "error",
+        "reason": "The observation ended before the final display state was captured."
+      },
+      "links": [
+        {
+          "type": "example-specification-reference",
+          "target": "VFY-000000000001-r00001"
+        }
+      ],
+      "source": {
+        "path": null,
+        "digest": null,
+        "processRef": "fixture-iterative@1"
+      },
+      "storage": "frozen",
+      "recordedAt": null
+    },
+    {
+      "id": "RES-000000000002",
+      "revisionId": "RES-000000000002-r00001",
+      "revision": 1,
+      "type": "RES",
+      "title": "Power display result",
+      "body": "",
+      "payload": {
+        "outcome": "pass",
+        "source_commit": "0000000000000000000000000000000000000000"
+      },
+      "links": [
+        {
+          "type": "example-specification-reference",
+          "target": "VFY-000000000001-r00001"
+        }
+      ],
+      "source": {
+        "path": null,
+        "digest": null,
+        "processRef": "fixture-iterative@1"
+      },
+      "storage": "frozen",
+      "recordedAt": null
+    }
+  ],
+  "requirements": [
+    {
+      "revisionId": "REQ-000000000001-r00001",
+      "kind": "stakeholder",
+      "level": null,
+      "component": null,
+      "statement": "The user can understand current and accumulated energy use."
+    },
+    {
+      "revisionId": "REQ-000000000002-r00001",
+      "kind": "stakeholder",
+      "level": null,
+      "component": null,
+      "statement": "The user can resume monitoring after an interruption."
+    },
+    {
+      "revisionId": "REQ-000000000003-r00001",
+      "kind": "software",
+      "level": "system",
+      "component": null,
+      "statement": "The system shall display power."
+    },
+    {
+      "revisionId": "REQ-000000000003-r00002",
+      "kind": "software",
+      "level": "system",
+      "component": null,
+      "statement": "The system shall display the latest power reading and its units."
+    },
+    {
+      "revisionId": "REQ-000000000003-r00003",
+      "kind": "software",
+      "level": "system",
+      "component": null,
+      "statement": "The system shall display the latest valid power reading and units, or indicate that a current reading is unavailable."
+    },
+    {
+      "revisionId": "REQ-000000000004-r00001",
+      "kind": "software",
+      "level": "system",
+      "component": null,
+      "statement": "The system shall resume monitoring after a recoverable interruption."
+    },
+    {
+      "revisionId": "REQ-000000000005-r00001",
+      "kind": "software",
+      "level": "high-level",
+      "component": "dashboard",
+      "statement": "When a valid power sample arrives, the dashboard shall update the displayed power and units."
+    },
+    {
+      "revisionId": "REQ-000000000006-r00001",
+      "kind": "software",
+      "level": "high-level",
+      "component": "meter-adapter",
+      "statement": "When a valid meter sample arrives, the meter adapter shall publish that sample to consumers."
+    },
+    {
+      "revisionId": "REQ-000000000007-r00001",
+      "kind": "software",
+      "level": "low-level",
+      "component": "dashboard",
+      "statement": "When a sample identifies another meter, the dashboard shall retain the selected meter display."
+    },
+    {
+      "revisionId": "REQ-000000000008-r00001",
+      "kind": "software",
+      "level": "low-level",
+      "component": "dashboard",
+      "statement": "When a late sample belongs to the previously selected meter, the dashboard shall leave the current selection and reading unchanged."
+    },
+    {
+      "revisionId": "REQ-000000000009-r00001",
+      "kind": "software",
+      "level": "high-level",
+      "component": "storage",
+      "statement": "When a collected sample is stored, the storage component shall preserve it across process restart."
+    }
+  ],
+  "decompositions": [
+    {
+      "revisionId": "DCP-000000000001-r00001",
+      "parent": "REQ-000000000001-r00001",
+      "children": [
+        "REQ-000000000003-r00003",
+        "REQ-000000000004-r00001"
+      ]
+    },
+    {
+      "revisionId": "DCP-000000000002-r00001",
+      "parent": "REQ-000000000002-r00001",
+      "children": [
+        "REQ-000000000004-r00001"
+      ]
+    },
+    {
+      "revisionId": "DCP-000000000003-r00001",
+      "parent": "REQ-000000000003-r00003",
+      "children": [
+        "REQ-000000000005-r00001",
+        "REQ-000000000006-r00001"
+      ]
+    },
+    {
+      "revisionId": "DCP-000000000004-r00001",
+      "parent": "REQ-000000000004-r00001",
+      "children": [
+        "REQ-000000000006-r00001",
+        "REQ-000000000009-r00001"
+      ]
+    },
+    {
+      "revisionId": "DCP-000000000005-r00001",
+      "parent": "REQ-000000000005-r00001",
+      "children": [
+        "REQ-000000000007-r00001"
+      ]
+    },
+    {
+      "revisionId": "DCP-000000000006-r00001",
+      "parent": "REQ-000000000007-r00001",
+      "children": [
+        "REQ-000000000008-r00001"
+      ]
+    }
+  ],
+  "reviews": [
+    {
+      "review": "REV-000000000001-r00001",
+      "requirement": "REQ-000000000003-r00002",
+      "reviewedSubject": "RQS-000000000001-r00001",
+      "applicability": "requirement-assessment",
+      "group": null,
+      "outcome": "fail",
+      "disposition": "needs-change",
+      "rationale": "The unavailable-reading case is unspecified.",
+      "path": [
+        {
+          "from": "REV-000000000001-r00001",
+          "relation": "reviews",
+          "to": "RQS-000000000001-r00001",
+          "source": "link"
+        },
+        {
+          "from": "RQS-000000000001-r00001",
+          "relation": "contains",
+          "to": "REQ-000000000003-r00002",
+          "source": "link"
+        }
+      ]
+    },
+    {
+      "review": "REV-000000000002-r00001",
+      "requirement": "REQ-000000000003-r00003",
+      "reviewedSubject": "RQS-000000000001-r00002",
+      "applicability": "requirement-assessment",
+      "group": null,
+      "outcome": "pass",
+      "disposition": "valid",
+      "rationale": "The reading, units, and unavailable state are explicit.",
+      "path": [
+        {
+          "from": "REV-000000000002-r00001",
+          "relation": "reviews",
+          "to": "RQS-000000000001-r00002",
+          "source": "link"
+        },
+        {
+          "from": "RQS-000000000001-r00002",
+          "relation": "contains",
+          "to": "REQ-000000000003-r00003",
+          "source": "link"
+        }
+      ]
+    }
+  ],
+  "verification": [
+    {
+      "requirement": "REQ-000000000003-r00003",
+      "specification": "VFY-000000000001-r00001",
+      "results": [
+        "RES-000000000001-r00001",
+        "RES-000000000002-r00001"
+      ],
+      "caseIds": [
+        "power-display"
+      ],
+      "path": [
+        {
+          "from": "VFY-000000000001-r00001",
+          "relation": "coverage[0].target",
+          "to": "REQ-000000000003-r00003",
+          "source": "payload"
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "id": "fixture-evidence-1",
+      "ownerRevision": "RES-000000000002-r00001",
+      "locator": "fixture://power-display-output",
+      "mediaType": "text/plain",
+      "digest": null,
+      "availability": "missing"
+    }
+  ],
+  "events": [
+    {
+      "id": "fixture-event-0",
+      "kind": "artifact-revision",
+      "title": "Understand energy use",
+      "recordedAt": null,
+      "sourceOrder": 0,
+      "artifacts": [
+        "REQ-000000000001-r00001"
+      ],
+      "operationId": null,
+      "inputs": [],
+      "outputs": [],
+      "source": {
+        "path": null,
+        "digest": null,
+        "processRef": "fixture-iterative@1"
+      },
+      "details": {
+        "fixture": true
+      }
+    },
+    {
+      "id": "fixture-event-1",
+      "kind": "artifact-revision",
+      "title": "Recover from interruptions",
+      "recordedAt": null,
+      "sourceOrder": 1,
+      "artifacts": [
+        "REQ-000000000002-r00001"
+      ],
+      "operationId": null,
+      "inputs": [],
+      "outputs": [],
+      "source": {
+        "path": null,
+        "digest": null,
+        "processRef": "fixture-iterative@1"
+      },
+      "details": {
+        "fixture": true
+      }
+    },
+    {
+      "id": "fixture-event-2",
+      "kind": "artifact-revision",
+      "title": "Show current power",
+      "recordedAt": null,
+      "sourceOrder": 2,
+      "artifacts": [
+        "REQ-000000000003-r00001"
+      ],
+      "operationId": null,
+      "inputs": [],
+      "outputs": [],
+      "source": {
+        "path": null,
+        "digest": null,
+        "processRef": "fixture-iterative@1"
+      },
+      "details": {
+        "fixture": true
+      }
+    },
+    {
+      "id": "fixture-event-3",
+      "kind": "artifact-revision",
+      "title": "Show current power",
+      "recordedAt": null,
+      "sourceOrder": 3,
+      "artifacts": [
+        "REQ-000000000003-r00002"
+      ],
+      "operationId": null,
+      "inputs": [],
+      "outputs": [],
+      "source": {
+        "path": null,
+        "digest": null,
+        "processRef": "fixture-iterative@1"
+      },
+      "details": {
+        "fixture": true
+      }
+    },
+    {
+      "id": "fixture-event-4",
+      "kind": "artifact-revision",
+      "title": "Show current power",
+      "recordedAt": null,
+      "sourceOrder": 4,
+      "artifacts": [
+        "REQ-000000000003-r00003"
+      ],
+      "operationId": null,
+      "inputs": [],
+      "outputs": [],
+      "source": {
+        "path": null,
+        "digest": null,
+        "processRef": "fixture-iterative@1"
+      },
+      "details": {
+        "fixture": true
+      }
+    },
+    {
+      "id": "fixture-event-5",
+      "kind": "artifact-revision",
+      "title": "Keep monitoring available",
+      "recordedAt": null,
+      "sourceOrder": 5,
+      "artifacts": [
+        "REQ-000000000004-r00001"
+      ],
+      "operationId": null,
+      "inputs": [],
+      "outputs": [],
+      "source": {
+        "path": null,
+        "digest": null,
+        "processRef": "fixture-iterative@1"
+      },
+      "details": {
+        "fixture": true
+      }
+    },
+    {
+      "id": "fixture-event-6",
+      "kind": "artifact-revision",
+      "title": "Display a power reading",
+      "recordedAt": null,
+      "sourceOrder": 6,
+      "artifacts": [
+        "REQ-000000000005-r00001"
+      ],
+      "operationId": null,
+      "inputs": [],
+      "outputs": [],
+      "source": {
+        "path": null,
+        "digest": null,
+        "processRef": "fixture-iterative@1"
+      },
+      "details": {
+        "fixture": true
+      }
+    },
+    {
+      "id": "fixture-event-7",
+      "kind": "artifact-revision",
+      "title": "Publish valid readings",
+      "recordedAt": null,
+      "sourceOrder": 7,
+      "artifacts": [
+        "REQ-000000000006-r00001"
+      ],
+      "operationId": null,
+      "inputs": [],
+      "outputs": [],
+      "source": {
+        "path": null,
+        "digest": null,
+        "processRef": "fixture-iterative@1"
+      },
+      "details": {
+        "fixture": true
+      }
+    },
+    {
+      "id": "fixture-event-8",
+      "kind": "artifact-revision",
+      "title": "Ignore readings for another meter",
+      "recordedAt": null,
+      "sourceOrder": 8,
+      "artifacts": [
+        "REQ-000000000007-r00001"
+      ],
+      "operationId": null,
+      "inputs": [],
+      "outputs": [],
+      "source": {
+        "path": null,
+        "digest": null,
+        "processRef": "fixture-iterative@1"
+      },
+      "details": {
+        "fixture": true
+      }
+    },
+    {
+      "id": "fixture-event-9",
+      "kind": "artifact-revision",
+      "title": "Preserve display state for late replies",
+      "recordedAt": null,
+      "sourceOrder": 9,
+      "artifacts": [
+        "REQ-000000000008-r00001"
+      ],
+      "operationId": null,
+      "inputs": [],
+      "outputs": [],
+      "source": {
+        "path": null,
+        "digest": null,
+        "processRef": "fixture-iterative@1"
+      },
+      "details": {
+        "fixture": true
+      }
+    },
+    {
+      "id": "fixture-event-10",
+      "kind": "artifact-revision",
+      "title": "Retain recorded samples",
+      "recordedAt": null,
+      "sourceOrder": 10,
+      "artifacts": [
+        "REQ-000000000009-r00001"
+      ],
+      "operationId": null,
+      "inputs": [],
+      "outputs": [],
+      "source": {
+        "path": null,
+        "digest": null,
+        "processRef": "fixture-iterative@1"
+      },
+      "details": {
+        "fixture": true
+      }
+    },
+    {
+      "id": "fixture-event-11",
+      "kind": "artifact-revision",
+      "title": "Energy monitoring",
+      "recordedAt": null,
+      "sourceOrder": 11,
+      "artifacts": [
+        "DCP-000000000001-r00001"
+      ],
+      "operationId": null,
+      "inputs": [],
+      "outputs": [],
+      "source": {
+        "path": null,
+        "digest": null,
+        "processRef": "fixture-iterative@1"
+      },
+      "details": {
+        "fixture": true
+      }
+    },
+    {
+      "id": "fixture-event-12",
+      "kind": "artifact-revision",
+      "title": "Recovery",
+      "recordedAt": null,
+      "sourceOrder": 12,
+      "artifacts": [
+        "DCP-000000000002-r00001"
+      ],
+      "operationId": null,
+      "inputs": [],
+      "outputs": [],
+      "source": {
+        "path": null,
+        "digest": null,
+        "processRef": "fixture-iterative@1"
+      },
+      "details": {
+        "fixture": true
+      }
+    },
+    {
+      "id": "fixture-event-13",
+      "kind": "artifact-revision",
+      "title": "Power presentation and sampling",
+      "recordedAt": null,
+      "sourceOrder": 13,
+      "artifacts": [
+        "DCP-000000000003-r00001"
+      ],
+      "operationId": null,
+      "inputs": [],
+      "outputs": [],
+      "source": {
+        "path": null,
+        "digest": null,
+        "processRef": "fixture-iterative@1"
+      },
+      "details": {
+        "fixture": true
+      }
+    },
+    {
+      "id": "fixture-event-14",
+      "kind": "artifact-revision",
+      "title": "Monitoring continuity",
+      "recordedAt": null,
+      "sourceOrder": 14,
+      "artifacts": [
+        "DCP-000000000004-r00001"
+      ],
+      "operationId": null,
+      "inputs": [],
+      "outputs": [],
+      "source": {
+        "path": null,
+        "digest": null,
+        "processRef": "fixture-iterative@1"
+      },
+      "details": {
+        "fixture": true
+      }
+    },
+    {
+      "id": "fixture-event-15",
+      "kind": "artifact-revision",
+      "title": "Display association",
+      "recordedAt": null,
+      "sourceOrder": 15,
+      "artifacts": [
+        "DCP-000000000005-r00001"
+      ],
+      "operationId": null,
+      "inputs": [],
+      "outputs": [],
+      "source": {
+        "path": null,
+        "digest": null,
+        "processRef": "fixture-iterative@1"
+      },
+      "details": {
+        "fixture": true
+      }
+    },
+    {
+      "id": "fixture-event-16",
+      "kind": "artifact-revision",
+      "title": "Late reply handling",
+      "recordedAt": null,
+      "sourceOrder": 16,
+      "artifacts": [
+        "DCP-000000000006-r00001"
+      ],
+      "operationId": null,
+      "inputs": [],
+      "outputs": [],
+      "source": {
+        "path": null,
+        "digest": null,
+        "processRef": "fixture-iterative@1"
+      },
+      "details": {
+        "fixture": true
+      }
+    },
+    {
+      "id": "fixture-event-17",
+      "kind": "artifact-revision",
+      "title": "Earlier requirement selection",
+      "recordedAt": null,
+      "sourceOrder": 17,
+      "artifacts": [
+        "RQS-000000000001-r00001"
+      ],
+      "operationId": null,
+      "inputs": [],
+      "outputs": [],
+      "source": {
+        "path": null,
+        "digest": null,
+        "processRef": "fixture-iterative@1"
+      },
+      "details": {
+        "fixture": true
+      }
+    },
+    {
+      "id": "fixture-event-18",
+      "kind": "artifact-revision",
+      "title": "Current requirement selection",
+      "recordedAt": null,
+      "sourceOrder": 18,
+      "artifacts": [
+        "RQS-000000000001-r00002"
+      ],
+      "operationId": null,
+      "inputs": [],
+      "outputs": [],
+      "source": {
+        "path": null,
+        "digest": null,
+        "processRef": "fixture-iterative@1"
+      },
+      "details": {
+        "fixture": true
+      }
+    },
+    {
+      "id": "fixture-event-19",
+      "kind": "review",
+      "title": "Clarify missing readings",
+      "recordedAt": null,
+      "sourceOrder": 19,
+      "artifacts": [
+        "REV-000000000001-r00001"
+      ],
+      "operationId": null,
+      "inputs": [],
+      "outputs": [],
+      "source": {
+        "path": null,
+        "digest": null,
+        "processRef": "fixture-iterative@1"
+      },
+      "details": {
+        "fixture": true
+      }
+    },
+    {
+      "id": "fixture-event-20",
+      "kind": "review",
+      "title": "Requirements review",
+      "recordedAt": null,
+      "sourceOrder": 20,
+      "artifacts": [
+        "REV-000000000002-r00001"
+      ],
+      "operationId": null,
+      "inputs": [],
+      "outputs": [],
+      "source": {
+        "path": null,
+        "digest": null,
+        "processRef": "fixture-iterative@1"
+      },
+      "details": {
+        "fixture": true
+      }
+    },
+    {
+      "id": "fixture-event-21",
+      "kind": "artifact-revision",
+      "title": "Power display checks",
+      "recordedAt": null,
+      "sourceOrder": 21,
+      "artifacts": [
+        "VFY-000000000001-r00001"
+      ],
+      "operationId": null,
+      "inputs": [],
+      "outputs": [],
+      "source": {
+        "path": null,
+        "digest": null,
+        "processRef": "fixture-iterative@1"
+      },
+      "details": {
+        "fixture": true
+      }
+    },
+    {
+      "id": "fixture-event-22",
+      "kind": "verification-result",
+      "title": "Power display observation incomplete",
+      "recordedAt": null,
+      "sourceOrder": 22,
+      "artifacts": [
+        "RES-000000000001-r00001"
+      ],
+      "operationId": null,
+      "inputs": [],
+      "outputs": [],
+      "source": {
+        "path": null,
+        "digest": null,
+        "processRef": "fixture-iterative@1"
+      },
+      "details": {
+        "fixture": true
+      }
+    },
+    {
+      "id": "fixture-event-23",
+      "kind": "verification-result",
+      "title": "Power display result",
+      "recordedAt": null,
+      "sourceOrder": 23,
+      "artifacts": [
+        "RES-000000000002-r00001"
+      ],
+      "operationId": null,
+      "inputs": [],
+      "outputs": [],
+      "source": {
+        "path": null,
+        "digest": null,
+        "processRef": "fixture-iterative@1"
+      },
+      "details": {
+        "fixture": true
+      }
+    }
+  ],
+  "diagnostics": []
+}
